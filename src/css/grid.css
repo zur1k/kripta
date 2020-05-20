@@ -44,7 +44,7 @@ html {
   padding-left: 0;
   margin-right: auto;
   margin-left: auto;
-  min-height: 600px;
+  
   
 }
 @media (min-width: 576px) {
@@ -76,6 +76,8 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
+
+
 
 @media (min-width: 576px) {
   .container, .container-sm {
