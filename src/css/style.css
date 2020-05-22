@@ -1,51 +1,95 @@
 @font-face {
-    font-family: Constantia;
-    font-family: Lato;
-    src: url('/fonts/Constantia-Bold.woff');
-    src: url('/fonts/Lato-Light.woff');
-    src: url('/fonts/Lato-Light.woff2');
-    src: url('/fonts/Lato-Regular.woff');
-    src: url('/fonts//Lato-Regular.woff2');
-    src: url('/fonts/Lato-SemiboldItalic.woff');
-    src: url('/fonts/Lato-SemiboldItalic.woff2');
+  font-family: "Lato";
+  src: url("../fonts/Lato-SemiboldItalic.woff2") format("woff2"),
+    url("../fonts/Lato-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
 }
-*{
-    box-sizing: border-box;
+
+@font-face {
+  font-family: "Constantia";
+  src: url("../fonts/Constantia-Bold.woff2") format("woff2"),
+    url("../fonts/Constantia-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Light.woff2") format("woff2"),
+    url("../fonts/Lato-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+label {
+  text-align: start;
+  display: block;
+  font-size: 16px;
+  color: #e0e0e0;
+  font-family: "Constantia";
+}
+input {
+  height: 33px;
+}
+
+* {
+  box-sizing: border-box;
 }
 body {
-    margin:0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-
 .header {
-    background: url(../img/bg-hero.png);
-    background-size:cover; 
-    background-repeat: no-repeat;
-    padding: 30px; 
+  background: url(../img/bg-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  font-style: normal;
+}
+.footer {
+  background-color: #2a2c2b;
+  text-align: center;
+}
+.footer-item {
+  font-family: "Constantia";
+  font-size: 12px;
+  padding: 20px 0;
+  color: #fff;
+}
+.section--bg {
+  background: url(../img/section2-3-bg.png);
+  background-size: cover;
+  background-position: center center;
 }
 .h1 {
   text-align: center;
-     font-size: 36px;
-     color: #fff;
-      font-family: Constantia;
-     border-bottom: 5px solid red;
+  font-size: 36px;
+  color: #fff;
+  font-family: "Constantia";
+  border-bottom: 5px solid red;
 }
 
 .header-discr {
-    font-family: Lato;
-    font-weight: 200;
-    font-size: 18px;
-    color: #959696;  
-    padding-bottom: 30px; 
-    position: relative;   
-    text-align: center;  
-    max-width: 300px;
-    margin: 18px auto;
+  font-family: "Lato";
+  font-weight: 200;
+  font-size: 18px;
+  color: #959696;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+  max-width: 300px;
+  margin: 18px auto;
 }
-
-       
-
 
 .row-1::before {
   display: none;
@@ -56,30 +100,27 @@ body {
   height: 100%;
   max-width: 480px;
   max-height: 480px;
-  
 }
 
 .btn {
-    display: block;
-    margin: 0 auto;    
-    max-width: 250px;  
-    background-color: #c7001c;
-    padding: 20px 50px;
-    border-radius: 30px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: 3px 0px 51px 6px rgba(176,1,26,1);
-    transition: all .4s ;
-    text-align: center;
- 
-
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+  background-color: #c7001c;
+  padding: 20px 50px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0px 11px 25.81px 3.19px rgba(176, 1, 26, 0.64);
+  transition: all 0.4s;
+  text-align: center;
+  border: navy;
 }
 .btn:hover {
-    background-color: #fb1836;
-
+  background-color: #fb1836;
 }
 .cta {
   font-size: 20px;
@@ -91,17 +132,217 @@ body {
   margin: 0 auto;
   box-shadow: 0px 11px 26px 3px rgba(176, 1, 26, 0.64);
 }
+/* aboutus */
+.aboutus {
+  color: rgb(237, 237, 237);
+  position: relative;
+}
 
+.aboutus-title {
+  display: inline-block;
+  font-size: 30px;
+
+  color: #2a2c2b;
+  font-family: "Constantia";
+  border-bottom: 8px solid #c7001c;
+  margin-left: 25px;
+  z-index: 10;
+}
+.aboutus-suptitle {
+  font-size: 18px;
+  font-family: "Lato";
+  color: #2a2c2b;
+  font-style: italic;
+  margin-left: 25px;
+  padding-top: 90px;
+  z-index: 10;
+}
+.aboutus-discr {
+  background-color: #2a2c2b;
+  font-size: 18px;
+  font-family: "Lato";
+  font-style: normal;
+  color: rgb(237, 237, 237);
+  line-height: 1.2;
+  padding: 70px 60px 50px;
+  z-index: 10;
+  position: relative;
+  top: 0;
+}
+.aboutus-discr::before {
+  content: "";
+  background-image: url(../img/poloski.png);
+  width: 80px;
+  height: 75px;
+  position: absolute;
+  bottom: -5%;
+  left: -3%;
+}
+.aboutus::before {
+  content: "";
+  background-color: rgba(176, 1, 26, 1);
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  z-index: 1;
+  top: 30%;
+  right: 18%;
+}
+.aboutus-img {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  right: 10%;
+  max-width: 420px;
+}
+
+/* cards */
+.cards-item {
+  background-color: #2a2c2b;
+  padding: 0;
+  box-shadow: 0px 11px 25.81px 3.19px rgba(42, 44, 43, 0.2);
+  text-align: center;
+}
+
+.cards-item:not(:last-child) {
+  margin-bottom: 40px;
+  margin-top: 55px;
+}
+.cards-item:last-child {
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0px 11px 25.81px 3.19px rgba(42, 44, 43, 0.2);  
+}
+
+.cards-item__text {
+  margin-left: 25px;
+  padding-right: 33px;
+}
+.cards-item__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Constantia";
+  color: rgb(245, 245, 245);
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  border-bottom: 8px solid #c7001c;
+  display: inline-block;
+}
+.cards-item__title--black {
+  color: #434544;
+}
+
+.cards-item__discr {
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(254, 254, 254);
+  line-height: 1.2;
+  margin-top: 0;
+  padding-bottom: 25px;
+}
+.card-item__img {
+  width: 100%;
+}
+
+.cards-item__discr--black {
+  color: #434544;
+}
+
+.m-md-auto.cards-item {
+  margin-bottom: 40px !important;
+}
+.m-md-auto.cards-item:first-child {
+  margin-top: 40px !important;
+}
+
+/* forms  */
+.forms {
+  padding-top: 140px;
+}
+.form-container {
+  padding-bottom: 130px;
+  position: relative;
+}
+.form-container::before {
+  content: "";
+  width: 100%;
+  max-width: 488px;
+  max-height: 525px;
+  height: 100%;
+  background-color: #c7001c;
+  position: absolute;
+  top: -1%;
+  right: 37%;
+  z-index: -1;
+}
+
+.form-wrapper {
+  background-color: #2a2c2b;
+  padding: 45px 0 25px 34px;
+  max-width: 440px;
+  width: 100%;
+  height: 100%;
+}
+.form-item__img {
+ text-align: end;
+  width: 100%;
+  max-width: 660px;
+}
+.form-img {
+  height: 100%;
+  width: 100%;
+}
+.form-title {
+  font-size: 36px;
+  font-family: "Constantia";
+  border-bottom: 8px solid #c7001c;
+  display: inline-block;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+.form-discr {
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Lato";
+  font-style: italic;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+
+
+.form-name,
+.form-secondname {
+  max-width: 145px;
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 25px;
+  outline: none;
+}
+.form-phone,
+.form-email {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 25px;
+  outline: none;
+}
+
+.form-btn {
+  margin: 0;
+  outline: none;
+}
 
 @media (min-width: 576px) {
   .header {
     background: url(../img/bg-hero.png);
-    background-size:cover; 
+    background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px 0; 
-}
+    padding: 30px 0;
+  }
 
-  .container, .container-sm {
+  .container,
+  .container-sm {
     max-width: 540px;
   }
   .h1 {
@@ -114,12 +355,9 @@ body {
     padding-bottom: 40px;
     font-size: 20px;
     max-width: 100%;
-    
   }
   .row-1::before {
-
-background: none;
-    
+    background: none;
   }
   .cta {
     font-size: 24px;
@@ -128,52 +366,137 @@ background: none;
     background-color: #b0011a;
     color: #fff;
     padding: 25px 100px;
-    margin:0 auto 0;
-    box-shadow: 21px -21px 0px -9px rgba(36,22,23,1),0px 11px 26px 3px rgba(176, 1, 26, 0.64);
+    margin: 0 auto 0;
+    box-shadow: 0px 11px 26px 3px rgba(176, 1, 26, 0.64);
+  }
+  /* aboutus */
+  .aboutus-discr {
+    font-size: 16px;
+    padding: 30px 30px 30px;
+  }
+  .aboutus-img {
+    top: 97px;
+    z-index: 5;
+    right: -85%;
+    max-width: 300px;
+  }
+  .aboutus::before {
+    width: 300px;
+    height: 300px;
+    top: 47%;
+    right: -73%;
+  }
+  .aboutus-suptitle {
+    font-size: 14px;
+    padding-top: 134px;
+    margin-left: 0;
+  }
+  .aboutus-title {
+    display: inline-block;
+    font-size: 21px;
+    color: #2a2c2b;
+    font-family: "Constantia";
+    border-bottom: 8px solid #c7001c;
+    z-index: 10;
+    margin-left: 0;
+  }
+  /* card */
+  .cards-item {
+    text-align: start;
+  }
+  .card-item__img {
+    width: 30%;
   }
 }
 @media (min-width: 768px) {
-  .container, .container-sm, .container-md {
+  .container,
+  .container-sm,
+  .container-md {
     max-width: 720px;
   }
   .header {
     background: url(../img/bg-hero.png);
-    background-size:cover; 
+    background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px 0; 
-}
+    padding: 30px 0;
+  }
   .h1 {
     text-align: start;
     padding-top: 30px;
     font-size: 50px;
     line-height: 1.2;
     font-weight: 600;
-    border-bottom:11px solid red;
+    border-bottom: 11px solid red;
   }
   .header-discr {
     padding-bottom: 40px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: start;
   }
-  
+
   .row-1::before {
     display: block;
     background-image: url(../img/poluramka.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y:0;
-        
-      }
-      .btn {
-        font-size: 18px;
-      }
-
-
+    background-position-y: 0;
+  }
+  .col-md-12 {
+    padding-left: 50px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+  .cta {
+    margin: 0 auto 30px;
+    box-shadow: 0px 11px 26px 3px rgba(176, 1, 26, 0.64);
+  }
+  /* about me */
+  .aboutus-discr {
+    background-color: #2a2c2b;
+    font-size: 18px;
+    font-family: "Lato";
+    font-style: normal;
+    color: rgb(237, 237, 237);
+    line-height: 1.2;
+    padding: 40px 35px 40px;
+    z-index: 10;
+    position: relative;
+    top: 0;
+  }
+  .aboutus-img {
+    position: absolute;
+    top: 10%;
+    z-index: 5;
+    right: -75%;
+    max-width: 350px;
+  }
+  .aboutus::before {
+    width: 350px;
+    height: 350px;
+    top: 43%;
+    right: -63%;
+  }
+  .aboutus-title {
+    font-size: 26px;
+  }
+  .aboutus-suptitle {
+    font-size: 16px;
+  }
+  /* card */
+  .card-item__img {
+    width: 30%;
+  }
 }
 @media (min-width: 992px) {
-  .container, .container-sm, .container-md, .container-lg {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
     max-width: 960px;
-    min-height: 600px;
+  }
+  .container--header {
+    min-height: 530px;
   }
   .h1 {
     text-align: start;
@@ -184,73 +507,188 @@ background: none;
   }
   .header {
     background: url(../img/bg-hero.png);
-    background-size:cover; 
+    background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px 0; 
-}
+    padding: 30px 0;
+  }
   .header-discr {
     padding-bottom: 40px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .btn {
     display: inline-block;
   }
   .header {
     background: url(../img/bg-hero.png);
-    background-size:cover; 
+    background-size: cover;
     background-position-x: 50%;
     background-repeat: no-repeat;
-    padding: 30px 0; 
-}
-.cta {
-  margin:-50px auto 0;
-}
+    padding: 30px 0;
+  }
+  .cta {
+    margin: -50px auto 90px;
+    box-shadow: 21px -21px 0px -9px rgba(36, 22, 23, 1),
+      0px 11px 26px 3px rgba(176, 1, 26, 0.64);
+  }
+
+  /* aboutmus */
+  .aboutus {
+    margin-left: 30px;
+  }
+  .aboutus-img {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    right: 13%;
+    max-width: 370px;
+  }
+  .aboutus::before {
+    content: "";
+    background-color: rgba(176, 1, 26, 1);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+    top: 47%;
+    right: 23%;
+  }
+  .aboutus-discr {
+    font-size: 16px;
+    padding: 40px 40px 35px;
+  }
+  .aboutus-title {
+    font-size: 26px;
+    font-family: "Constantia";
+  }
+  /* cards */
+  .cards-item__discr {
+    font-size: 12px;
+  }
+  .cards-item__title {
+    font-size: 28px;
+  }
+  .cards-item__text {
+    margin-left: 15px;
+  }
+
+  .footer-item {
+    font-family: "Constantia";
+    font-size: 16px;
+    padding: 55px 0;
+    color: #fff;
+  }
 }
 @media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
     max-width: 1140px;
-    
   }
   .h1 {
     text-align: start;
     padding-top: 30px;
-    font-size: 50px;
+    font-size: 48px;
     line-height: 1.2;
     font-weight: 600;
-    border-bottom:11px solid red;
+    border-bottom: 11px solid red;
   }
   .header {
     background: url(../img/bg-hero.png);
-    background-size:cover; 
+    background-size: cover;
     background-position-x: 50%;
     background-repeat: no-repeat;
-    padding: 30px 0; 
-}
-  
+    padding: 30px 0;
+  }
+
   .btn {
     display: inline-block;
-  
   }
   .header-discr {
-    font-family: Lato;
-    font-weight: 200;
+    font-family: "Lato";
+    font-weight: 300;
     font-size: 18px;
     color: #959696;
     padding-bottom: 30px;
-    position: relative;     
-}
+    position: relative;
+  }
+  /* aboutus */
+  .aboutus {
+    color: rgb(237, 237, 237);
+    margin-left: 40px;
+    position: relative;
+  }
+
+  .aboutus-title {
+    display: inline-block;
+    font-size: 30px;
+
+    color: #2a2c2b;
+    font-family: "Constantia";
+    border-bottom: 8px solid #c7001c;
+    margin-left: 25px;
+    z-index: 10;
+  }
+  .aboutus-suptitle {
+    font-size: 18px;
+    font-family: "Lato";
+    color: #2a2c2b;
+    font-style: italic;
+    margin-left: 25px;
+    padding-top: 90px;
+    z-index: 10;
+  }
+  .aboutus-discr {
+    background-color: #2a2c2b;
+    font-size: 18px;
+    font-family: "Lato";
+    font-style: normal;
+    color: rgb(237, 237, 237);
+    line-height: 1.2;
+    padding: 70px 60px 50px;
+    z-index: 10;
+    position: relative;
+    top: 0;
+  }
+  .aboutus-discr::before {
+    content: "";
+    background-image: url(../img/poloski.png);
+    width: 80px;
+    height: 75px;
+    position: absolute;
+    bottom: -5%;
+    left: -3%;
+  }
+  .aboutus::before {
+    content: "";
+    background-color: rgba(176, 1, 26, 1);
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    z-index: 1;
+    top: 30%;
+    right: 18%;
+  }
+  .aboutus-img {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    right: 10%;
+    max-width: 420px;
+  }
+  /* cards */
+  .cards-item__discr {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1300px) {
   .header {
     background: url(../img/bg-hero.png);
-    background-size:cover; 
+    background-size: cover;
     background-position-x: 50%;
     background-repeat: no-repeat;
-    padding: 30px 0; 
+    padding: 30px 0;
+  }
 }
-
-}
-
-
-
