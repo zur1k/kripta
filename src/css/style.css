@@ -258,23 +258,30 @@ body {
 /* forms  */
 .forms {
   padding-top: 140px;
+  background: url(../img/line-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+
 }
 .form-container {
   padding-bottom: 130px;
   position: relative;
 }
-.form-container::before {
+.form-container::before{
   content: "";
   width: 100%;
   max-width: 488px;
   max-height: 525px;
   height: 100%;
-  background-color: #c7001c;
+  background-color: #b0011a;
   position: absolute;
-  top: -1%;
-  right: 37%;
-  z-index: -1;
+  top: 0%;
+  right: 38%;
+  z-index: 1;
+  box-shadow: 0px 11px 25.81px 3.19px rgba(176, 1, 26, 0.28);
 }
+
+
 
 .form-wrapper {
   background-color: #2a2c2b;
@@ -282,15 +289,17 @@ body {
   max-width: 440px;
   width: 100%;
   height: 100%;
+  box-shadow: 0px 11px 25.81px 3.19px rgba(42, 44, 43, 0.2);
 }
-.form-item__img {
- text-align: end;
-  width: 100%;
-  max-width: 660px;
+
+.form-item__content {
+  z-index: 2;
 }
 .form-img {
   height: 100%;
   width: 100%;
+  max-width: 670px;
+  z-index: 2;
 }
 .form-title {
   font-size: 36px;
@@ -306,7 +315,7 @@ body {
   font-family: "Lato";
   font-style: italic;
   margin-bottom: 15px;
-  margin-left: 20px;
+  margin-left: 38px;
 }
 
 
@@ -487,6 +496,17 @@ body {
   .card-item__img {
     width: 30%;
   }
+  /* form */
+  .form-container::before {
+    max-width: 248px;
+    max-height: 280px;
+    top: 42%;
+    right: 54%;
+
+}
+.form-img {
+  max-width: 250px;
+
 }
 @media (min-width: 992px) {
   .container,
@@ -576,6 +596,20 @@ body {
     font-size: 16px;
     padding: 55px 0;
     color: #fff;
+  }
+    /* form  */
+
+    .form-container::before {
+      max-width: 350px;
+      max-height: 410px;
+      top: 18%;
+      right: 48%
+  }
+  .form-img {
+    height: 100%;
+    width: 100%;
+    max-width: 490px;
+    z-index: 2;
   }
 }
 @media (min-width: 1200px) {
@@ -681,6 +715,21 @@ body {
   .cards-item__discr {
     font-size: 16px;
   }
+  /* form */
+  .form-img {
+    height: 100%;
+    width: 100%;
+    max-width: 670px;
+    z-index: 2;
+  }
+  .form-container::before{
+    max-width: 488px;
+    max-height: 525px;
+    top: 0%;
+    right: 38%;
+  }
+  
+
 }
 
 @media (min-width: 1300px) {
